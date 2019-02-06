@@ -7,13 +7,21 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { Page404Component } from './components/page404/page404.component';
 import { NavbarComponent } from './components/sections/navbar/navbar.component';
+import { VideosComponent } from './components/videos/videos.component';
+import { FotosComponent } from './components/fotos/fotos.component';
+import { ServiciosComponent } from './components/servicios/servicios.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     Page404Component,
-    NavbarComponent
+    NavbarComponent,
+    VideosComponent,
+    FotosComponent,
+    ServiciosComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
