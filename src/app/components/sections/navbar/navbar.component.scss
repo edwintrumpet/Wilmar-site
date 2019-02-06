@@ -49,6 +49,9 @@ $color: hsl(200,100,60);
     z-index: 1;
     cursor: pointer;
     display: flex;
+    pointer-events: none;
+    opacity: 0;
+    transition: all .3s ease;
 
     i{
         position: absolute;
@@ -186,5 +189,7 @@ $color: hsl(200,100,60);
     }
     .float-button, .go-home{
         display: initial;
+        pointer-events: initial;
+        opacity: 1;
     }
 }
