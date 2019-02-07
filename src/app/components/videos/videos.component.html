@@ -1,3 +1,8 @@
-<p>
-  videos works!
-</p>
+<div class="cuerpo">
+  <div class="contenedor-video" *ngFor="let video of videos">
+    <video src="./../../../assets/videos/{{video.link}}" controls></video>
+    <div class="texto">{{video.title}}<br>
+                        Interpretación del Mariachi Sol de México de Wilmar Córdoba
+    </div>
+  </div>
+</div>

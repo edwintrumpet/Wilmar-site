@@ -1,0 +1,45 @@
+.cuerpo{
+    background: linear-gradient(to top, #00539C 0%, white 100%);
+    background-attachment: fixed;
+    padding: 4em 1em;
+
+    .contenedor-video{
+        background-color: #F0EAD6;
+        margin: 10px 0;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 2px 2px 10px black;
+
+        video{
+            width: 50%;
+            max-height: 50vh;
+            margin: 0;
+        }
+
+        .texto{
+            width: 50%;
+            display: flex;
+            color: black;
+            font-size: 2em;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .cuerpo .contenedor-video{
+        flex-direction: column-reverse;
+
+        video{
+            width: 100%;
+        }
+
+        .texto{
+            width: 100%;
+        }
+    }
+}
