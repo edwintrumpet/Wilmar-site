@@ -30,6 +30,12 @@
     }
 }
 
+@media only screen and (max-width: 900px){
+    .cuerpo .contenedor-video .texto{
+        font-size: 1.5em;
+    }
+}
+
 @media only screen and (max-width: 800px){
     .cuerpo .contenedor-video{
         flex-direction: column-reverse;
@@ -40,6 +46,7 @@
 
         .texto{
             width: 100%;
+            font-size: 1.2em;
         }
     }
 }
