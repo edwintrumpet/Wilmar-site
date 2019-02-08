@@ -12,6 +12,7 @@ import { FotosComponent } from './components/fotos/fotos.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { ObsequiosCarrouselComponent } from './components/sections/obsequios-carrousel/obsequios-carrousel.component';
+import { WhatsappComponent } from './components/sections/whatsapp/whatsapp.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ObsequiosCarrouselComponent } from './components/sections/obsequios-car
     FotosComponent,
     ServiciosComponent,
     ContactoComponent,
-    ObsequiosCarrouselComponent
+    ObsequiosCarrouselComponent,
+    WhatsappComponent
   ],
   imports: [
     BrowserModule,
