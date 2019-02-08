@@ -35,6 +35,10 @@ $color: hsl(200,100,60);
             -moz-box-shadow: rgb(255, 208, 0) 0px 0px 15px;
         }
     }
+
+    .active{
+        display: none;
+    }
 }
 
 .go-home{
@@ -192,5 +196,9 @@ $color: hsl(200,100,60);
         display: initial;
         pointer-events: initial;
         opacity: 1;
+    }
+
+    .active{
+        display: none;
     }
 }

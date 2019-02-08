@@ -1,22 +1,22 @@
 <div class="navbar">
-  <a *ngIf="ubicacion!='/'" routerLink="/" (click)="change('/')">Inicio</a>
-  <a *ngIf="ubicacion!='/videos'" routerLink="videos" (click)="change('/videos')">Videos</a>
-  <a *ngIf="ubicacion!='/fotos'" routerLink="fotos" (click)="change('/fotos')">Fotos</a>
-  <a *ngIf="ubicacion!='/servicios'" routerLink="servicios" (click)="change('/servicios')">Servicios</a>
-  <a *ngIf="ubicacion!='/contacto'" routerLink="contacto" (click)="change('/contacto')">Contacto</a>
+  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
+  <a routerLink="videos" routerLinkActive="active">Videos</a>
+  <a routerLink="fotos" routerLinkActive="active">Fotos</a>
+  <a routerLink="servicios" routerLinkActive="active">Servicios</a>
+  <a routerLink="contacto" routerLinkActive="active">Contacto</a>
 </div>
 
 <div class="float-button" id="float-button" (click)="expandir()">
 </div>
 <nav class="circular-menu" id="circular-menu">
   <ul>
-    <li><a routerLink="videos" (click)="change('/videos')"><i class="fas fa-video"><br><span>Videos</span></i></a></li>
-    <li><a routerLink="fotos" (click)="change('/fotos')"><i class="fas fa-image"><br><span>Fotos</span></i></a></li>
-    <li><a routerLink="servicios" (click)="change('/servicios')"><i class="fas fa-music"><br><span>Servicios</span></i></a></li>
-    <li><a routerLink="contacto" (click)="change('/contacto')"><i class="fas fa-phone"><br><span>Contacto</span></i></a></li>
+    <li><a routerLink="videos" (click)="expandir()"><i class="fas fa-video"><br><span>Videos</span></i></a></li>
+    <li><a routerLink="fotos" (click)="expandir()"><i class="fas fa-image"><br><span>Fotos</span></i></a></li>
+    <li><a routerLink="servicios" (click)="expandir()"><i class="fas fa-music"><br><span>Servicios</span></i></a></li>
+    <li><a routerLink="contacto" (click)="expandir()"><i class="fas fa-phone"><br><span>Contacto</span></i></a></li>
   </ul>
 </nav>
 
-<div *ngIf="ubicacion!='/'" class="go-home">
-  <a routerLink="/" (click)="change('/')"><i class="fas fa-home"></i></a>
+<div routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="go-home">
+  <a routerLink="/"><i class="fas fa-home"></i></a>
 </div>

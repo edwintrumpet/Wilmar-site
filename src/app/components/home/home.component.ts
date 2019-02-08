@@ -29,6 +29,10 @@ export class HomeComponent implements OnInit {
   }
 
   @HostListener('window:scroll', ['$event']) desplazamiento(){
+    this.parallax();
+  }
+
+  parallax(){
     let posicion = document.documentElement.scrollTop;
     let suavizar = posicion / 2;
 
