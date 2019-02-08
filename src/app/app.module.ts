@@ -11,6 +11,7 @@ import { VideosComponent } from './components/videos/videos.component';
 import { FotosComponent } from './components/fotos/fotos.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { ObsequiosCarrouselComponent } from './components/sections/obsequios-carrousel/obsequios-carrousel.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ContactoComponent } from './components/contacto/contacto.component';
     VideosComponent,
     FotosComponent,
     ServiciosComponent,
-    ContactoComponent
+    ContactoComponent,
+    ObsequiosCarrouselComponent
   ],
   imports: [
     BrowserModule,

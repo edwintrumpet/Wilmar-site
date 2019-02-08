@@ -1,10 +1,10 @@
 .cuerpo{
-    background: linear-gradient(to top, #00539C 0%, white 100%);
+    background: linear-gradient(to top, lighten(#00539C, 20%) 0%, white 100%);
     background-attachment: fixed;
     padding: 4em 1em;
 
     .contenedor-video{
-        background-color: #F0EAD6;
+        background-color: #00539C;
         margin: 10px 0;
         border-radius: 10px;
         padding: 20px;
@@ -21,7 +21,7 @@
         .texto{
             width: 50%;
             display: flex;
-            color: black;
+            color: white;
             font-size: 2em;
             justify-content: center;
             align-items: center;

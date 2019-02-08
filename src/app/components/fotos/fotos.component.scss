@@ -1,0 +1,32 @@
+.cuerpo{
+    background: linear-gradient(to top, #00539C 0%, white 100%);
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+
+    .obsequios{
+        margin-top: 4rem;
+        position: relative;
+    
+        p{
+            text-align: center;
+            font-size: 2em;
+            padding: 0px 20px 20px 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px){
+    
+    .cuerpo .obsequios p{
+        font-size: 1.5em;
+        padding: 0px 20px 10px 20px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .cuerpo .obsequos p{
+        font-size: 1em;
+    }
+}

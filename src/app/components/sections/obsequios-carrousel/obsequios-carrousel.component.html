@@ -1,0 +1,9 @@
+<div id="cont" class="fondo-slide">
+  <div id="sli" class="contenedor">
+    <div class="slide" *ngFor="let obsequio of obsequios">
+      <img src="./../../../../assets/img/{{obsequio.link}}" alt="{{obsequio.alt}}">
+    </div>
+  </div>
+  <button (click)="plusSlides(modulo(1))" class="prev"><i class="fas fa-angle-double-left"></i></button>
+  <button (click)="plusSlides(modulo(-1))" class="next"><i class="fas fa-angle-double-right"></i></button>
+</div>
