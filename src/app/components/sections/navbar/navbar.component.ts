@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -12,11 +12,6 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  cerrar(): void {
-    document.getElementById('float-button').classList.remove('pulsed');
-    document.getElementById('circular-menu').classList.remove('expand');
-  }
-
   expandir(): void {
     const floatButton = document.getElementById('float-button');
     const circularMenu = document.getElementById('circular-menu');
@@ -25,4 +20,10 @@ export class NavbarComponent implements OnInit {
     circularMenu.classList.toggle('expand');
   }
 
+  @HostListener('window:click', ['$event.target']) cerrar(e){
+    if(e != document.getElementById('float-button') && e != document.getElementById('circular-menu')){
+      document.getElementById('float-button').classList.remove('pulsed');
+      document.getElementById('circular-menu').classList.remove('expand');
+    }
+  }
 }
