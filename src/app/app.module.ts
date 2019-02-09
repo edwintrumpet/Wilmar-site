@@ -13,6 +13,7 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { ObsequiosCarrouselComponent } from './components/sections/obsequios-carrousel/obsequios-carrousel.component';
 import { WhatsappComponent } from './components/sections/whatsapp/whatsapp.component';
+import { MariachiCarrouselComponent } from './components/sections/mariachi-carrousel/mariachi-carrousel.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { WhatsappComponent } from './components/sections/whatsapp/whatsapp.compo
     ServiciosComponent,
     ContactoComponent,
     ObsequiosCarrouselComponent,
-    WhatsappComponent
+    WhatsappComponent,
+    MariachiCarrouselComponent
   ],
   imports: [
     BrowserModule,
