@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'videos', component: VideosComponent },
   { path: 'fotos', component: FotosComponent },
   { path: 'servicios', component: ServiciosComponent },
-  { path: 'contacto', component: ContactoComponent },
+  { path: 'repertorio', component: ContactoComponent },
   { path: '**', component: Page404Component }
 ];
 

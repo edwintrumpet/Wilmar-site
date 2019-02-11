@@ -30,19 +30,19 @@ export class MariachiCarrouselComponent implements OnInit {
   }
 
   plusSlidesm(n: number): void{
-    let mayor = this.largom();
-    let slide = document.getElementById('sli');
+    let mayorm = this.largom();
+    let slidem = document.getElementById('slim');
     this.positionm = this.positionm + n;
 
     if(this.positionm>34){
       this.positionm = 34;
-      slide.style.transform =`translateX(${this.positionm}px)`;
-    }else if(this.positionm<mayor){
-      this.positionm = mayor;
-      slide.style.transform =`translateX(${this.positionm}px)`;
+      slidem.style.transform =`translateX(${this.positionm}px)`;
+    }else if(this.positionm<mayorm){
+      this.positionm = mayorm;
+      slidem.style.transform =`translateX(${this.positionm}px)`;
       this.positionm = 34-n;
     }else{
-      slide.style.transform =`translateX(${this.positionm}px)`;
+      slidem.style.transform =`translateX(${this.positionm}px)`;
     }
   }
 
