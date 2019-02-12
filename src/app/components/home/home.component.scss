@@ -62,7 +62,8 @@
 .videos{
     width: 100%;
     padding: 20px;
-    background-color: #F0EAD6;
+    //background-color: #F0EAD6;
+    background-color: #00539C;
 
     .contenedor-video{
         display: flex;
@@ -78,7 +79,9 @@
     padding: 20px 20px 60px 20px;
     text-align: center;
     font-size: 2em;
-    background-color: #F0EAD6;
+    //background-color: #F0EAD6;
+    background-color: #00539C;
+    color: white;
 }
 
 @media only screen and (max-width: 800px){
